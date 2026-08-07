@@ -1,0 +1,37 @@
+/* ==========================================================================
+   MK MOVIE TICKET BOOKING SYSTEM - DESIGN SYSTEM & STYLES
+   ========================================================================== */
+:root {
+  --bg-primary: #0a0c16;
+  --bg-card: rgba(18, 22, 40, 0.75);
+  --bg-card-hover: rgba(28, 35, 62, 0.85);
+  --bg-modal: #0f1322;
+  
+  --primary-accent: #e50914;
+  --gold-accent: #ffb703;
+  --gold-glow: rgba(255, 183, 3, 0.4);
+  --neon-purple: #8a2be2;
+  
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dark: #64748b;
+  
+  --border-light: rgba(255, 255, 255, 0.1);
+  --border-glow: rgba(255, 183, 3, 0.3);
+  
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+}
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+}

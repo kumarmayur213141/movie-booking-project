@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MK Movie Ticket Booking System (Python Flask Fullstack)</title>
+  <!-- Google Fonts & FontAwesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <!-- Ambient Glow Background -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <i class="fa-solid fa-film logo-icon"></i>
+        <div class="logo-text">
+          <span class="brand-mk">MK</span>
+          <span class="brand-sub">CINEMAS (PYTHON BACKEND)</span>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <button class="nav-btn active" id="btnBrowseMovies" onclick="switchTab('browse')">
+          <i class="fa-solid fa-clapperboard"></i> Movies
+        </button>
+        <button class="nav-btn" id="btnMyBookings" onclick="switchTab('history')">
